@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us </title>
+    <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+     <!-- main css -->
+ <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+     *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Shippori Antique', sans-serif;
+     }
+     .contact{
+         position: relative;
+         min-height:100vh;
+         padding: 50px 100px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+        background-size: cover;
+        background-image: url(image5.jpg);
+
+     }
+       .contact .content{
+         max-width: 800px;
+         text-align: center;
+     }
+       .contact .content h2{
+         font-size: 36px;
+         font-weight: 500;
+         color:red;
+         
+         
+     }
+     .contact .content p{
+         font-weight: 300;
+         color:black;
+        
+     }
+     .container{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 30px;
+     }
+     .contact .contactInfo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+   margin-left: 60px;
+     }
+ 
+     .contact .contactInfo .box{
+         position: relative;
+         padding: 20px 0;
+         display: flex;
+     }
+     .contact .contactInfo  .box .icon{
+         min-height:60px;
+         height:60x;
+         background:yellow;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius:100px;
+         font-size:40px;
+         width: 60px;
+     }
+     .contact.contactInfo .box .icon .text{
+         display:flex;
+         margin-left: 40px;
+         font-size: 30px;
+         color: pink;
+         flex-direction:column;
+         font-weight:300;
+     }
+     .contact .contactInfo .box .text h3{
+     font-weight: 500;
+     color: maroon;
+     }
+     .contactform{
+         width: 100%;
+         padding: 40px;
+         background:#fff;
+     }
+     .contactform h4{
+         font-size:30px;
+         color:darkcyan;
+         font-weight:500;
+     }
+      .contactform .inputbox{
+         position:relative;
+         width: 100%;
+         margin-top: 10px;
+     }
+     .contactform .inputbox  input
+     .contactform .inputbox   textarea
+     {
+         width: 100%;
+         padding: 5px 0;
+         font-size: 16px;
+         margin: 10px 0;
+         border: none;
+         border-bottom: 2px solid #333;  
+         outline: none;
+         resize: none;
+     }
+     .contactform .inputbox input:focus~span,
+     .contactform .inputbox input:valid~span
+     .contactform .inputbox textarea:focus~span,
+     .contactform .inputbox textarea:valid~span
+     {
+         color: #E91E63;
+         font-size: 12PX;
+         transform: translateY(-20px);
+
+     } 
+     .contactform .inputbox input[type="submit"]
+    {
+        width: 100px;
+        background: #00bcd3;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+    }
+    @media(max-width:991px){
+        .contact{
+            padding: 50px;
+        }
+        .container{
+             flex-direction: column;
+        }
+        .container .contactInfo{
+            margin-bottom: 40px;
+        }
+    }
+ </style>
+</head>
+<body style="background-image: url(image5.jpg);">
+
+   <section class="contact">
+       <div class="content">
+           <h2>contact us</h2>
+           <p>St Annes School of Excellent in kenya,contact us,we are always ready to offer best education for your girls </p>
+       </div>
+<div class="container">
+    <div class="contactInfo">
+        <div class="box">
+        <img src="https://img.icons8.com/material-outlined/24/000000/address.png"/>
+            <div class="text">
+                <h3>address</h3>
+                <p>40km from Mwala road,
+                    <b>Mwala,Machakos,
+                        <b>2345</p>
+            </div>
+        </div>
+        
+        <div class="box">
+        <img src="https://img.icons8.com/material-outlined/24/000000/phone.png"/>
+            <div class="text">
+                <h3>phone number</h3>
+                <p>0704180935</p>
+            </div>
+    </div>
+    <div class="box">
+    <img src="https://img.icons8.com/material-outlined/24/000000/email-open.png"/>
+        <div class="text">
+            <h3>email</h3>
+            <p>@stannesgirlsschool.gmail.com<b>2345</p>
+        </div>
+</div>
+    </div>
+   <div class="contactform">
+       <form>
+<h4>send a messange</h4>
+<div class="inputbox">
+    <input type="text" name="" required="required">
+<span>Parents name</span>
+</input>
+</div>
+<div class="inputbox">
+    <input type="text" name="" required="required">
+<span>phone number</span>
+</input>
+</div>
+<div class="inputbox">
+    <input type="text" name="" required="required">
+<span>Email</span>
+</input>
+</div>
+<div class="inputbox">
+    <textarea required="required"></textarea>
+<span>Type your message</span>
+</input>
+</div>
+<div class="inputbox">
+    <input type="submit" name="" value="send">
+</input>
+</div>
+       </form>
+   </div>
+</div>
+</section>
+<script src="../fontawesome/js/all.js"></script>
+</body>
+</html>
